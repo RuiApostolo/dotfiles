@@ -1,3 +1,7 @@
+" slightly lighter background
+let g:molokai_original = 1
+
+
 " general options
 set encoding=utf-8
 set t_Co=256

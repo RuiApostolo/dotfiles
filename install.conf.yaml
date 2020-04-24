@@ -15,4 +15,10 @@
 - shell:
     # should keep submodules on proper versions
     - [git submodule update --init --recursive, Installing submodules]
-
+    # install theme
+    - wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/molokai.sh 
+    - chmod +x molokai.sh 
+    # won't work for WSL
+    - sed -i '2s/^/export TERMINAL=gnome-terminal\n/' molokai.sh 
+    - source molokai.sh 
+    - rm molokai.sh
