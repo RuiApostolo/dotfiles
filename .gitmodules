@@ -4,9 +4,6 @@
 [submodule "vim/pack/colors/start/molokai"]
 	path = vim/pack/colors/start/molokai
 	url = https://github.com/tomasr/molokai.git
-[submodule "vim/pack/plugins/vim-easy-align"]
-	path = vim/pack/plugins/start/vim-easy-align
-	url = https://github.com/junegunn/vim-easy-align.git
 [submodule "vim/pack/plugins/start/vimtex"]
 	path = vim/pack/plugins/start/vimtex
 	url = https://github.com/lervag/vimtex.git
