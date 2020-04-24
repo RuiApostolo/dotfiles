@@ -8,9 +8,10 @@
 - link:
     ~/.profile:
     ~/.bashrc:
-    ~/.bash_logout:
-    ~/.vim/:
-        path: vim/*
+    ~/.bash_logout: 
+    ~/.vim:
+        force: true
+    ~/.test:
 
 - shell:
     # should keep submodules on proper versions
