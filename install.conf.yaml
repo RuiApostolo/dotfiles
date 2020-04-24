@@ -14,11 +14,12 @@
 
 - shell:
     # should keep submodules on proper versions
-    - [git submodule update --init --recursive, Installing submodules]
+    - [git submodule update --init --recursive, Installing submodules.]
     # install theme
-    - wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/molokai.sh 
-    - chmod +x molokai.sh 
     # won't work for WSL
-    - sed -i '2s/^/export TERMINAL=gnome-terminal\n/' molokai.sh 
-    - source molokai.sh 
-    - rm molokai.sh
+    - [wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/molokai.sh, Retrieving theme.]
+    - [chmod +x molokai.sh, Making theme script runable.]
+    # won't work for WSL
+    - [sed -i '2s/^/export TERMINAL=gnome-terminal\n/' molokai.sh, Adding terminal variable to script.]
+    - [source molokai.sh, Install theme.]
+    - [rm molokai.sh, Cleaning up.]
