@@ -1,20 +1,18 @@
+- defaults:
+    link:
+        create: true
+        glob: true
+
 - clean: ['~']
 
 - link:
     ~/.profile:
-        path: profile
-        create: false
-        relink: false
-        force: false
     ~/.bashrc:
-        path: bashrc
-        create: false
-        relink: false
-        force: false
     ~/.bash_logout:
-        path: bash_logout
-        create: false
-        relink: false
-        force: false
+    ~/.vim/:
+        path: vim/*
 
+- shell:
+    # should keep submodules on proper versions
+    - [git submodule update --init --recursive, Installing submodules]
 

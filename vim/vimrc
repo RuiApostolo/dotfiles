@@ -1,0 +1,76 @@
+" general options
+set encoding=utf-8
+set t_Co=256
+set number relativenumber
+set autoread
+set wrap
+set linebreak
+set tabstop=2
+set shiftwidth=2
+set softtabstop=4
+set expandtab
+set showcmd
+set cursorline
+set wildmenu
+set showmatch
+set incsearch
+set hlsearch
+set backup
+set writebackup
+set modeline
+set backspace=indent,eol,start
+set background=dark
+set splitbelow
+set splitright
+set mouse=a
+set scrolloff=10
+
+" set folding
+set foldmethod=indent
+set foldlevel=99
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+" molokai color scheme
+colorscheme molokai
+
+" remap for moving around in splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" fortran definitions
+let fortran_free_source=1
+let fortan_more_precise=1
+let fortran_do_enddo=1
+
+" turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+
+" custom syntax files
+" let myfiletypefile = "~/.vim/myfiletypes.vim"
+
+" vim-plug enable
+" filetype plugin indent on
+syntax on
+
+" Add home directory to runtimepath
+set rtp^=$HOME
+
+" Ubuntu only
+" Triger `autoread` when files changes on disk
+set autoread
+" https://unix.stackexchange.com/questions/149209/refresh-changed-content-of-file-opened-in-vim/383044#383044
+" https://vi.stackexchange.com/questions/13692/prevent-focusgained-autocmd-running-in-command-line-editing-mode
+autocmd FocusGained,BufEnter,CursorHold,CursorHoldI * if mode() != 'c' | checktime | endif
+" Notification after file change
+" https://vi.stackexchange.com/questions/13091/autocmd-event-for-autoread
+autocmd FileChangedShellPost *
+  \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
+
+" Diffs current file with changed version (when vim refuses to reload it automatically)
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+
