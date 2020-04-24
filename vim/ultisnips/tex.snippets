@@ -1,0 +1,222 @@
+# Put in ~/.vim/ultisnips/
+snippet beg "begin{} / end{}" bA
+\begin{${1:equation}}%
+  \label{${2:eq}:${3:label}}
+  $0
+\end{$1}
+endsnippet
+
+snippet fig "Figure environment" bA
+\begin{figure}[${2:!htpb}]
+	\centering
+	\includegraphics[width=${3:0.95}\textwidth]{${4:name.eps}}
+	\caption{${4/(\w+)\.\w+/\u$1/}$0}
+	\label{fig:${4/(\w+)\.\w+/$1/}}
+\end{figure}
+endsnippet
+
+snippet cha "Chapter" bA
+\chapter{${1:${VISUAL:chapter name}}}%
+\label{ch:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+${0}
+endsnippet
+
+
+snippet sec "Section" bA
+\section{${1:${VISUAL:section name}}}%
+\label{sec:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+${0}
+endsnippet
+
+snippet sec* "Section" bA
+\section*{${1:${VISUAL:section name}}}%
+\label{sec:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+${0}
+endsnippet
+
+
+snippet sub "Subsection" bA
+\subsection{${1:${VISUAL:subsection name}}}%
+\label{sub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet sub* "Subsection" bA
+\subsection*{${1:${VISUAL:subsection name}}}%
+\label{sub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+${0}
+endsnippet
+
+snippet ssub "Subsubsection" bA
+\subsubsection{${1:${VISUAL:subsubsection name}}}%
+\label{ssub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet ssub* "Subsubsection" bA
+\subsubsection*{${1:${VISUAL:subsubsection name}}}%
+\label{ssub:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+${0}
+endsnippet
+
+snippet par "Paragraph" bA
+\paragraph{${1:${VISUAL:paragraph name}}}%
+\label{par:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet subp "Subparagraph" bA
+\subparagraph{${1:${VISUAL:subparagraph name}}}%
+\label{par:${2:${1/\\\w+\{(.*?)\}|\\(.)|(\w+)|([^\w\\]+)/(?4:_:\L$1$2$3\E)/ga}}}
+
+$0
+endsnippet
+
+snippet ac "Acroynm normal"
+\ac{${1:acronym}} $0
+endsnippet
+
+snippet acl "Acroynm expanded"
+\acl{${1:acronym}} $0
+endsnippet
+
+snippet acs "Acroynm short"
+\acs{${1:acronym}} $0
+endsnippet
+
+snippet acf "Acroynm full"
+\acf{${1:acronym}} $0
+endsnippet
+
+snippet acp "Acroynm plural normal"
+\acp{${1:acronym}} $0
+endsnippet
+
+snippet aclp "Acroynm plural expanded"
+\aclp{${1:acronym}} $0
+endsnippet
+
+snippet acsp "Acroynm plural short"
+\acsp{${1:acronym}} $0
+endsnippet
+
+snippet acfp "Acroynm plural full"
+\acfp{${1:acronym}} $0
+endsnippet
+
+snippet Ac "Acroynm normal"
+\Ac{${1:acronym}} $0
+endsnippet
+
+snippet Acl "Acroynm expanded"
+\Acl{${1:acronym}} $0
+endsnippet
+
+snippet Acs "Acroynm short"
+\Acs{${1:acronym}} $0
+endsnippet
+
+snippet Acf "Acroynm full"
+\Acf{${1:acronym}} $0
+endsnippet
+
+snippet Acp "Acroynm plural normal"
+\Acp{${1:acronym}} $0
+endsnippet
+
+snippet Aclp "Acroynm plural expanded"
+\Aclp{${1:acronym}} $0
+endsnippet
+
+snippet Acsp "Acroynm plural short"
+\Acsp{${1:acronym}} $0
+endsnippet
+
+snippet Acfp "Acroynm plural full"
+\Acfp{${1:acronym}} $0
+endsnippet
+
+snippet pac "Parenthesised acroynm normal"
+\pac{${1:acronym}} $0
+endsnippet
+
+snippet pacs "Parenthesised acroynm short"
+\pacs{${1:acronym}} $0
+endsnippet
+
+snippet pacf "Parenthesised acroynm full"
+\pacf{${1:acronym}} $0
+endsnippet
+
+snippet pacp "Parenthesised acroynm plural normal"
+\pacp{${1:acronym}} $0
+endsnippet
+
+snippet pacsp "Parenthesised acroynm plural short"
+\pacsp{${1:acronym}} $0
+endsnippet
+
+snippet pacfp "Parenthesised acroynm plural full"
+\pacfp{${1:acronym}} $0
+endsnippet
+
+snippet Pac "Parenthesised acroynm normal"
+\Pac{${1:acronym}} $0
+endsnippet
+
+snippet Pacs "Parenthesised acroynm short"
+\Pacs{${1:acronym}} $0
+endsnippet
+
+snippet Pacf "Parenthesised acroynm full"
+\Pacf{${1:acronym}} $0
+endsnippet
+
+snippet Pacp "Parenthesised acroynm plural normal"
+\Pacp{${1:acronym}} $0
+endsnippet
+
+snippet Pacsp "Parenthesised acroynm plural short"
+\Pacsp{${1:acronym}} $0
+endsnippet
+
+snippet Pacfp "Parenthesised acroynm plural full"
+\Pacfp{${1:acronym}} $0
+endsnippet
+
+snippet cref "cross-reference" 
+\cref{${1:sec}:${2:name}} $0
+endsnippet
+
+snippet cite "citation" 
+\cite{${1:citation}} $0
+endsnippet
+
+snippet citep "citation parenthesis" 
+\citep{${1:citation}} $0
+endsnippet
+
+snippet mk "Math" wA
+$${1}$`!p
+if t[2] and t[2][0] not in [',', '.', '?', '-', ' ']:
+    snip.rv = ' '
+else:
+    snip.rv = ''
+`$2
+endsnippet
+
+snippet " "Quotes" A
+\`\`${1}''${0}
+endsnippet
+
+snippet etal "et al." 
+\etal{} $0
+endsnippet

@@ -7,3 +7,24 @@
 [submodule "vim/pack/colors/start/molokai"]
 	path = vim/pack/colors/start/molokai
 	url = https://github.com/tomasr/molokai.git
+[submodule "vim/pack/plugins/vim-easy-align"]
+	path = vim/pack/plugins/vim-easy-align
+	url = https://github.com/junegunn/vim-easy-align.git
+[submodule "vim/pack/plugins/start/vimtex"]
+	path = vim/pack/plugins/start/vimtex
+	url = https://github.com/lervag/vimtex.git
+[submodule "vim/pack/plugins/start/neomake"]
+	path = vim/pack/plugins/start/neomake
+	url = https://github.com/neomake/neomake.git
+[submodule "vim/pack/plugins/start/ultisnips"]
+	path = vim/pack/plugins/start/ultisnips
+	url = https://github.com/SirVer/ultisnips.git
+[submodule "vim/pack/plugins/start/nerdcommenter"]
+	path = vim/pack/plugins/start/nerdcommenter
+	url = https://github.com/preservim/nerdcommenter.git
+[submodule "vim/pack/plugins/start/traces.vim"]
+	path = vim/pack/plugins/start/traces.vim
+	url = https://github.com/markonm/traces.vim.git
+[submodule "vim/pack/plugins/start/python-mode"]
+	path = vim/pack/plugins/start/python-mode
+	url = https://github.com/python-mode/python-mode.git
