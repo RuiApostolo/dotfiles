@@ -1,3 +1,9 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
+[submodule "colors/start/molokai"]
+	path = colors/start/molokai
+	url = https://github.com/tomasr/molokai.git
+[submodule "vim/pack/colors/start/molokai"]
+	path = vim/pack/colors/start/molokai
+	url = https://github.com/tomasr/molokai.git
