@@ -55,7 +55,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 
 
 " custom syntax files
-" let myfiletypefile = "~/.vim/myfiletypes.vim"
+so $HOME/.vim/myfiletypes.vim
 
 " vim-plug enable
 " filetype plugin indent on
