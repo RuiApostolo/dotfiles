@@ -17,9 +17,9 @@
     - [git submodule update --init --recursive, Installing submodules.]
     # install theme
     # won't work for WSL
-    - [wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/molokai.sh, Retrieving theme.]
-    - [chmod +x molokai.sh, Making theme script runable.]
+    - [wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/molokai-soda.sh, Retrieving theme.]
+    - [chmod +x molokai-soda.sh, Making theme script runable.]
     # won't work for WSL
-    - [sed -i '2s/^/export TERMINAL=gnome-terminal\n/' molokai.sh, Adding terminal variable to script.]
-    - [source molokai.sh, Install theme.]
-    - [rm molokai.sh, Cleaning up.]
+    - [sed -i '2s/^/export TERMINAL=gnome-terminal\n/' molokai-soda.sh, Adding terminal variable to script.]
+    - [source molokai-soda.sh, Install theme.]
+    - [rm molokai-soda.sh, Cleaning up.]

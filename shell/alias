@@ -1,0 +1,31 @@
+#typo correction
+alias sl='ls'
+alias ci='vi'
+
+# some more ls aliases
+alias ll='ls -AhlFG'
+alias lk='ls -AlFG'
+alias la='ls -aCF'
+alias l='ls -ACF'
+
+# programs
+alias v='vim'
+alias vi='vim'
+alias SS='sudo systemctl'
+alias balias='vi ~/.dotfiles/alias && source ~/.bashrc'
+alias ralias='source ~/.bashrc'
+alias vimrc='vi ~/.dotfiles/vimrc'
+alias bashrc='vi ~/.dotfiles/bashrc'
+alias inputrc='vi ~/.dotfiles/inputrc'
+alias profile='vi ~/.dotfiles/profile'
+alias functions='vi ~/.dotfiles/funtions'
+
+#navigation
+alias q='exit'
+
+#utilities
+alias whatismyip="ip route get 8.8.8.8 | awk '{print \$NF; exit}'"
+alias sshconfig='vi ~/.ssh/config'
+alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
+
+
