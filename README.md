@@ -9,7 +9,7 @@ multiple times.
 
 For the color scheme to look right, you will also need terminal-specific
 support. The configuration for that, along with a whole bunch of other
-machine-specific configuration, is located in [dotfiles_local][dotfiles_local].
+machine-specific configuration, is located in [dotfiles_local][dotfiles_local] (private Repo).
 
 Dotfiles uses [Dotbot][dotbot] for installation.
 
