@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.gitconfig:
     ~/.profile:
     ~/.bashrc:
     ~/.bash_logout: 
@@ -13,7 +14,9 @@
         force: true
     ~/.inputrc:
     ~/.latexmkrc:
-    ~/.config/zathura/zathurarc:
+    ~/.config/zathura:
+        force: true
+        path: config/zathura
 
 - shell:
     # should keep submodules on proper versions
