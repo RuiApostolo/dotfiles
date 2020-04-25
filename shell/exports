@@ -1,3 +1,8 @@
+#!/bin/sh
+# programs
 export EDITOR="vim"
+export READER="zathura"
+
+# variables
 export OMP_NUM_THREADS=$(grep -c processor /proc/cpuinfo)
 

@@ -11,8 +11,9 @@
     ~/.bash_logout: 
     ~/.vim:
         force: true
-    # ~/.shell:
-    # ~/.bash:
+    ~/.inputrc:
+    ~/.latexmkrc:
+    ~/.config/zathura/zathurarc:
 
 - shell:
     # should keep submodules on proper versions

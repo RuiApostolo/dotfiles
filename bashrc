@@ -1,3 +1,4 @@
+#!/bin/bash
 # ~/.bashrc: executed by bash(1) for non-login shells.
 #c /usr/share/doc/bash/examples/startup-files (in the package bash-doc) for eg
 
@@ -10,9 +11,6 @@ esac
 # Functions
 source ~/.dotfiles/shell/functions
 
-# Prompt
-source ~/.dotfiles/bash/prompt
-
 # Allow local customizations in the ~/.dotfiles-local/shell/before file
 if [ -f ~/.dotfiles-local/shell/before ]; then
     source ~/.dotfiles-local/shell/before
@@ -23,12 +21,17 @@ if [ -f ~/.dotfiles-local/bash/bashrc_before ]; then
     source ~/.dotfiles-local/bash/bashrc_before
 fi
 
+# Settings
+source ~/.dotfiles/bash/settings
+
 # Aliases
 source ~/.dotfiles/shell/alias
 
 # Exports
 source ~/.dotfiles/shell/exports
 
+# Prompt
+source ~/.dotfiles/bash/prompt
 
 # Allow local customizations in the ~/.dotfiles-local/shell/after file
 if [ -f ~/.dotfiles-local/shell/after ]; then

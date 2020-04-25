@@ -1,0 +1,3 @@
+# allows forwards and backwards compatibility with vimtex
+set synctex true
+set synctex-editor-command "gvim --remote-silent +%{line} %{input}" 

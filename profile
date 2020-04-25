@@ -25,3 +25,10 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+
+# set PATH so it includes user's private dotfiles bin if it exists
+if [ -d "$HOME/.dotfiles/bin" ] ; then
+    PATH="$HOME/.dotfiles/bin:$PATH"
+fi
+

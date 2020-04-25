@@ -1,3 +1,4 @@
+#!/bin/sh
 # some more ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -AhlFG'
@@ -29,4 +30,5 @@ alias whatismyip="ip route get 8.8.8.8 | awk '{print \$NF; exit}'"
 alias sshconfig='vi ~/.ssh/config'
 alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
 
-
+#git
+alias graph='git log --all --decorate --oneline --graph'

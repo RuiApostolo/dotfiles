@@ -1,0 +1,16 @@
+#!/bin/sh
+sudo apt-file update
+sudo apt update
+sudo apt -y full-upgrade
+sudo apt -y autoremove
+sudo apt -y autoclean
+sudo update-pciids
+echo
+echo "Reboot? (y/N)"
+read -r key
+if [ "$(echo "$key" |tr "[:upper:]" "[:lower:]")" = y ]
+then
+  sudo reboot # doesn't work on WSL
+else
+  echo "You chose to not reboot."
+fi
