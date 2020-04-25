@@ -11,15 +11,17 @@
     ~/.bash_logout: 
     ~/.vim:
         force: true
+    # ~/.shell:
+    # ~/.bash:
 
 - shell:
     # should keep submodules on proper versions
     - [git submodule update --init --recursive, Installing submodules.]
     # install theme
     # won't work for WSL
-    - [wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/molokai-soda.sh, Retrieving theme.]
-    - [chmod +x molokai-soda.sh, Making theme script runable.]
+    - [wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/monokai-soda.sh, Retrieving theme.]
+    - [chmod +x monokai-soda.sh, Making theme script runable.]
     # won't work for WSL
-    - [sed -i '2s/^/export TERMINAL=gnome-terminal\n/' molokai-soda.sh, Adding terminal variable to script.]
-    - [source molokai-soda.sh, Install theme.]
-    - [rm molokai-soda.sh, Cleaning up.]
+    - [sed -i '2s/^/export TERMINAL=gnome-terminal\n/' monokai-soda.sh, Adding terminal variable to script.]
+    - [source monokai-soda.sh, Install theme.]
+    - [rm monokai-soda.sh, Cleaning up.]

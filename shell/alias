@@ -1,12 +1,13 @@
-#typo correction
-alias sl='ls'
-alias ci='vi'
-
 # some more ls aliases
+alias ls='ls --color=auto'
 alias ll='ls -AhlFG'
 alias lk='ls -AlFG'
 alias la='ls -aCF'
-alias l='ls -ACF'
+alias  l='ls -ACF'
+
+#typo correction
+alias sl='ls'
+alias ci='vi'
 
 # programs
 alias v='vim'

@@ -8,10 +8,10 @@ case $- in
 esac
 
 # Functions
-source ~/.shell/functions
+source ~/.dotfiles/shell/functions
 
 # Prompt
-source ~/.bash/prompt
+source ~/.dotfiles/bash/prompt
 
 # Allow local customizations in the ~/.dotfiles-local/shell/before file
 if [ -f ~/.dotfiles-local/shell/before ]; then
