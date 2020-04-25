@@ -16,5 +16,5 @@ Dotfiles uses [Dotbot][dotbot] for installation.
 Highly suggest using [init-dotfiles][init-dotfiles] to initiallise your dotfiles.
 
 [dotbot]: https://github.com/anishathalye/dotbot
-[dotfiles-local]: https://github.com/RuiApostolo/dotfiles-local
+[dotfiles-local]: https://github.com/RuiApostolo/dotfiles_local
 [init-dotfiles]: https://github.com/Vaelatern/init-dotfile
