@@ -9,12 +9,12 @@ multiple times.
 
 For the color scheme to look right, you will also need terminal-specific
 support. The configuration for that, along with a whole bunch of other
-machine-specific configuration, is located in [dotfiles-local][dotfiles-local].
+machine-specific configuration, is located in [dotfiles_local][dotfiles_local].
 
 Dotfiles uses [Dotbot][dotbot] for installation.
 
 Highly suggest using [init-dotfiles][init-dotfiles] to initiallise your dotfiles.
 
 [dotbot]: https://github.com/anishathalye/dotbot
-[dotfiles-local]: https://github.com/RuiApostolo/dotfiles_local
+[dotfiles_local]: https://github.com/RuiApostolo/dotfiles_local
 [init-dotfiles]: https://github.com/Vaelatern/init-dotfile
