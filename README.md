@@ -1,6 +1,20 @@
-# dotfiles
-General dotfiles
+Dotfiles
+========
 
-Highly suggest using:
-https://github.com/Vaelatern/init-dotfiles
-to initiallise your dotfiles.
+General options that work for all machines I work with.
+
+After cloning this repo, run `install` to automatically set up the development
+environment. Note that the install script is idempotent: it can safely be run
+multiple times.
+
+For the color scheme to look right, you will also need terminal-specific
+support. The configuration for that, along with a whole bunch of other
+machine-specific configuration, is located in [dotfiles-local][dotfiles-local].
+
+Dotfiles uses [Dotbot][dotbot] for installation.
+
+Highly suggest using [init-dotfiles][init-dotfiles] to initiallise your dotfiles.
+
+[dotbot]: https://github.com/anishathalye/dotbot
+[dotfiles-local]: https://github.com/RuiApostolo/dotfiles-local
+[init-dotfiles]: https://github.com/Vaelatern/init-dotfile
