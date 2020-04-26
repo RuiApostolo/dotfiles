@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # programs
 export EDITOR="vim"
 export READER="zathura"

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # go back N directories
 cdn () { for i in $(seq "$1") ; do cd .. ; done ; }
 

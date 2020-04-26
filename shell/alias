@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env sh
 # some more ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -AhlFG'
@@ -14,13 +14,13 @@ alias ci='vi'
 alias v='vim'
 alias vi='vim'
 alias SS='sudo systemctl'
-alias balias='vi ~/.dotfiles/alias && source ~/.bashrc'
+alias balias='vi ~/.dotfiles/shell/alias && source ~/.bashrc'
 alias ralias='source ~/.bashrc'
 alias vimrc='vi ~/.dotfiles/vimrc'
 alias bashrc='vi ~/.dotfiles/bashrc'
 alias inputrc='vi ~/.dotfiles/inputrc'
 alias profile='vi ~/.dotfiles/profile'
-alias functions='vi ~/.dotfiles/funtions'
+alias functions='vi ~/.dotfiles/shell/untions'
 
 #navigation
 alias q='exit'
