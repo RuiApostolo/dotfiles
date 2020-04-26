@@ -125,7 +125,8 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 " SimpylFold options
 " let g:SimpylFold_docstring_preview=1
 
-
+" vim-airline options
+let g:airline#extensions#tabline#enabled = 1
 
 
 

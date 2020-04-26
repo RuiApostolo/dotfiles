@@ -13,8 +13,8 @@ machine-specific configuration, is located in [dotfiles_local][dotfiles_local] (
 
 Dotfiles uses [Dotbot][dotbot] for installation.
 
-Highly suggest using [init-dotfiles][init-dotfiles] to initiallise your dotfiles.
+Used [init-dotfiles][init-dotfiles] to create my dotfiles repo.
 
 [dotbot]: https://github.com/anishathalye/dotbot
 [dotfiles_local]: https://github.com/RuiApostolo/dotfiles_local
-[init-dotfiles]: https://github.com/Vaelatern/init-dotfile
+[init-dotfiles]: https://github.com/Vaelatern/init-dotfiles
