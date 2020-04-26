@@ -127,8 +127,8 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
 " vim-airline options
 let g:airline#extensions#tabline#enabled = 1
-
-
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
 
 let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
