@@ -9,6 +9,7 @@ alias  l='ls -ACF'
 #typo correction
 alias sl='ls'
 alias ci='vi'
+alias :q='exit'
 
 # programs
 alias v='vim'
@@ -32,3 +33,6 @@ alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
 
 #git
 alias graph='git log --all --decorate --oneline --graph'
+
+#openfortvpn
+alias vpn="screen -d -m -s openfortivpn -c ~/.dotfiles_local/openfortvpn vpn"

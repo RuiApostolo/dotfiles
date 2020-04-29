@@ -58,7 +58,7 @@ nnoremap <leader><space> :nohlsearch<CR>
 so $HOME/.vim/myfiletypes.vim
 
 " vim-plug enable
-" filetype plugin indent on
+filetype plugin on
 syntax on
 
 " Add home directory to runtimepath

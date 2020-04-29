@@ -6,3 +6,8 @@ export READER="zathura"
 # variables
 export OMP_NUM_THREADS=$(grep -c processor /proc/cpuinfo)
 
+# Python virtual environments
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+export WORKON_HOME=$HOME/.dotfiles/python/venvs
+export PROJECT_HOME=$HOME/code
+source /home/rfapostolo/.local/bin/virtualenvwrapper.sh

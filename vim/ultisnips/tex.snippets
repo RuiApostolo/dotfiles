@@ -1,4 +1,9 @@
 # Put in ~/.vim/ultisnips/
+snippet us "use package" bA
+\usepackage[${1}]{${2:package}}
+endsnippet
+
+
 snippet beg "begin{} / end{}" bA
 \begin{${1:equation}}%
   \label{${2:eq}:${3:label}}
@@ -219,4 +224,12 @@ endsnippet
 
 snippet etal "et al." 
 \etal{} $0
+endsnippet
+
+snippet RG "RG" w
+$R_\textrm{g}$
+endsnippet
+
+snippet REE "REE" w
+$R_\textrm{ee}$
 endsnippet
