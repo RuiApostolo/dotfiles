@@ -6,21 +6,22 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig:
-    ~/.profile:
     ~/.bashrc:
     ~/.bash_logout: 
-    ~/.vim:
-        force: true
-    ~/.inputrc:
-    ~/.latexmkrc:
     ~/.config/zathura:
         force: true
         path: config/zathura
+    ~/.gitconfig:
+    ~/.inputrc:
+    ~/.latexmkrc:
     ~/.oh-my-zsh:
-    ~/.zshrc:
-    ~/.Xresources:
+    ~/.profile:
     ~/.urxvt:
+    ~/.vim:
+        force: true
+    ~/.xinitrc:
+    ~/.Xresources:
+    ~/.zshrc:
 
 - shell:
     # should keep submodules on proper versions
