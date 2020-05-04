@@ -17,6 +17,10 @@
     ~/.config/zathura:
         force: true
         path: config/zathura
+    ~/.oh-my-zsh:
+    ~/.zshrc:
+    ~/.Xresources:
+    ~/.urxvt:
 
 - shell:
     # should keep submodules on proper versions

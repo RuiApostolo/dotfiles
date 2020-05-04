@@ -12,6 +12,7 @@ alias ci='vi'
 alias :q='exit'
 
 # programs
+alias r='ranger'
 alias v='vim'
 alias vi='vim'
 alias SS='sudo systemctl'
