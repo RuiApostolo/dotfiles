@@ -31,8 +31,5 @@ alias whatismyip="ip route get 8.8.8.8 | awk '{print \$NF; exit}'"
 alias sshconfig='vi ~/.ssh/config'
 alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
 
-#git
-alias graph='git log --all --decorate --oneline --graph'
-
-#openfortvpn
-alias vpn="screen -d -m -s openfortivpn -c ~/.dotfiles_local/openfortvpn vpn"
+#openfortvpn not quite working
+# alias vpn="screen -d -m -s openfortivpn -c ~/.dotfiles_local/openfortvpn vpn"

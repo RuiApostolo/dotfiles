@@ -3,3 +3,12 @@
 	email = ruiapostolo@gmail.com
 [core]
 	excludesfile = ~/.dotfiles/gitignore_global
+[alias]
+  a = add
+  co = checkout
+  br = branch
+  ci = commit
+  st = status
+  unstage = reset HEAD --
+  last = log -1 HEAD
+  graph = log --all --decorate --oneline --graph
