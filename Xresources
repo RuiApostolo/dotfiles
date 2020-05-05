@@ -7,7 +7,7 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcdfilter
 
 
-URxvt*background: #101010
+URxvt*background: [70]#101010
 URxvt*foreground: #d0d0d0
 URxvt*cursorColor: #d0d0d0
 URxvt*color0: #101010
@@ -28,7 +28,7 @@ URxvt*color14: #4eb4fa
 URxvt*color15: #d0d0d0
 
 ! URxvt Appearance
-URxvt*imLocale: en_US.UTF-8
+URxvt*imLocale: en_GB.UTF-8
 URxvt*termName: rxvt-unicode-256color
 URxvt.letterSpace: -1
 URxvt.lineSpace: 0
@@ -40,17 +40,18 @@ URxvt.saveline: 2048
 URxvt.scrollBar: false
 URxvt.scrollBar_right: false
 URxvt.urgentOnBell: true
-URxvt.depth: 24
+URxvt.depth: 32
 URxvt.iso14755: false
 
 ! extensions
 URxvt.perl-ext-common: default,matcher,resize-font,keyboard-select
 URxvt.keysym.M-Escape: perl:keyboard-select:activate
 URxvt.keyboard-select.clipboard: true
-URxvt.url-launcher: chrome
+URxvt.url-launcher: google-chrome
 URxvt.matcher.button:     1
 
 URxvt.font: xft:MesloLGS NF:size=12, \
+            xft:Fira Code:size=12, \
 						xft:UbuntuMono Nerd Font:size=11, \
             xft:Inconsolata Nerd Font Mono:size=11, \
             xft:DejaVuSansMono Nerd Font:size=11, \

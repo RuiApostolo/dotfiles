@@ -1,7 +1,11 @@
 #!/usr/bin/env sh
+# set locale
+export LC_ALL="en_GB.UTF-8"
 # programs
 export EDITOR="vim"
+export GUI_EDITOR="subl"
 export READER="zathura"
+export BROWSER="google-chrome"
 
 # variables
 export OMP_NUM_THREADS=$(grep -c processor /proc/cpuinfo)

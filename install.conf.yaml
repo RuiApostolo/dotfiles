@@ -11,6 +11,8 @@
     ~/.config/zathura:
         force: true
         path: config/zathura
+    ~/.config/fontconfig:
+        path: config/fontconfig
     ~/.gitconfig:
     ~/.inputrc:
     ~/.latexmkrc:
@@ -19,7 +21,6 @@
     ~/.urxvt:
     ~/.vim:
         force: true
-    ~/.xinitrc:
     ~/.Xresources:
     ~/.zshrc:
 
