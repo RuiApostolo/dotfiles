@@ -7,7 +7,7 @@ Xft.hintstyle: hintfull
 Xft.lcdfilter: lcdfilter
 
 
-URxvt*background: [70]#101010
+URxvt*background: [80]#101010
 URxvt*foreground: #d0d0d0
 URxvt*cursorColor: #d0d0d0
 URxvt*color0: #101010
