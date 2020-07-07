@@ -2,7 +2,7 @@
 # some more ls aliases
 alias ls='ls --color=auto'
 alias ll='ls -AhlFG'
-alias lk='ls -AlFG'
+alias lk='ls -hlFG'
 alias la='ls -aCF'
 alias  l='ls -ACF'
 
@@ -16,8 +16,9 @@ alias r='ranger'
 alias v='vim'
 alias vi='vim'
 alias SS='sudo systemctl'
-alias balias='vi ~/.dotfiles/shell/alias && source ~/.bashrc'
-alias ralias='source ~/.bashrc'
+alias balias='vi ~/.dotfiles/shell/alias'
+alias sbash='source ~/.bashrc'
+alias szsh='source ~/.zshrc'
 alias vimrc='vi ~/.dotfiles/vimrc'
 alias bashrc='vi ~/.dotfiles/bashrc'
 alias inputrc='vi ~/.dotfiles/inputrc'
@@ -33,4 +34,30 @@ alias sshconfig='vi ~/.ssh/config'
 alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
 
 #openfortvpn not quite working
-# alias vpn="screen -d -m -s openfortivpn -c ~/.dotfiles_local/openfortvpn vpn"
+# alias vpn="screen -d -m -S vpn sudo openfortivpn -c ~/.dotfiles_local/config/fortivpn/config"
+alias vpn="screen -d -m -S vpn sudo openfortivpn -c ~/.dotfiles_local/config/fortivpn/config"
+
+
+
+#Works with zsh, might break bash
+alias d='dirs -v | head -10'
+alias 1='cd -'
+alias 2='cd -2'
+alias 3='cd -3'
+alias 4='cd -4'
+alias 5='cd -5'
+alias 6='cd -6'
+alias 7='cd -7'
+alias 8='cd -8'
+alias 9='cd -9'
+
+
+
+
+
+# suffix aliases
+alias -s {xyz,yml,yaml,py,run,txt,md,tcl,data,inp}=vim
+alias -s ods='libreoffice --nologo --calc &'
+alias -s odt='libreoffice --nologo --writer &'
+alias -s {mkv,avi,mp4,mp3}=vlc
+
