@@ -14,4 +14,4 @@ export OMP_NUM_THREADS=$(grep -c processor /proc/cpuinfo)
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.dotfiles/python/venvs
 export PROJECT_HOME=$HOME/code
-source /home/rfapostolo/.local/bin/virtualenvwrapper.sh
+#source /home/rfapostolo/.local/bin/virtualenvwrapper.sh
