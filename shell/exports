@@ -9,7 +9,7 @@ export BROWSER="google-chrome"
 
 # variables
 export OMP_NUM_THREADS=$(grep -c processor /proc/cpuinfo)
-export CUPS_USER="rapostol"
+# export CUPS_USER="rapostol"
 
 # Python virtual environments
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3

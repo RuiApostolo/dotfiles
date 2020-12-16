@@ -33,3 +33,4 @@ if [ -d "$HOME/.dotfiles/bin" ] ; then
     PATH="$HOME/.dotfiles/bin:$PATH"
 fi
 
+export CUPS_USER=rapostol
