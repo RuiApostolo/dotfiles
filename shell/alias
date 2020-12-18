@@ -37,19 +37,17 @@ alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
 # alias vpn="screen -d -m -S vpn sudo openfortivpn -c ~/.dotfiles_local/config/fortivpn/config"
 alias vpn="screen -d -m -S vpn sudo openfortivpn -c ~/.dotfiles_local/config/fortivpn/config"
 
-
-
 #Works with zsh, might break bash
 alias d='dirs -v | head -10'
-alias 1='cd -'
-alias 2='cd -2'
-alias 3='cd -3'
-alias 4='cd -4'
-alias 5='cd -5'
-alias 6='cd -6'
-alias 7='cd -7'
-alias 8='cd -8'
-alias 9='cd -9'
+# alias 1='cd -'
+# alias 2='cd -2'
+# alias 3='cd -3'
+# alias 4='cd -4'
+# alias 5='cd -5'
+# alias 6='cd -6'
+# alias 7='cd -7'
+# alias 8='cd -8'
+# alias 9='cd -9'
 
 
 
@@ -60,4 +58,8 @@ alias -s {xyz,yml,yaml,py,run,txt,md,tcl,data,inp}=vim
 alias -s ods='libreoffice --nologo --calc &'
 alias -s odt='libreoffice --nologo --writer &'
 alias -s {mkv,avi,mp4,mp3}=vlc
+alias -s pdf=zathura
 
+# iron merge
+
+# alias ironmerge='echo "lmp_merge -n 3 surface_up min/max z surface_down min/max z your_data min/maxz -o data.combined.out"'

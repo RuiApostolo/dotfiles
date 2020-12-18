@@ -5,6 +5,7 @@ sudo apt -y full-upgrade
 sudo apt -y autoremove
 sudo apt -y autoclean
 sudo update-pciids
+update_ohmyzsh
 echo
 echo "Reboot? (y/N)"
 read -r key
