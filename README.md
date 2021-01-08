@@ -15,9 +15,11 @@ machine-specific configuration, is located in [dotfiles_local][dotfiles_local] (
 First install
 -------------
 
-1 - Clone this repo: 
-2 - sudo apt install rxvt-unicode feh zsh
- - Remove by your original ~/.bashrc, etc. (and whatever other files install.conf.yaml is linking), from the home folder.
+1 - $ sudo apt install rxvt-unicode feh zsh git
+2 - Clone this repo: 
+3 - Remove by your original ~/.bashrc, etc. (and whatever other files install.conf.yaml is linking), from the home folder.
+4 - If running on WSL, remove incompatible lines from install.conf.yaml
+5 - $ ./install
 
 
 Dotfiles uses [Dotbot][dotbot] for installation.
