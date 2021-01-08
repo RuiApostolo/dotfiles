@@ -1,4 +1,6 @@
 #!/usr/bin/env sh
+# background processes
+background () { "$@" > /dev/null 2&>1 & }
 # go back N directories
 cdn () { for i in $(seq "$1") ; do cd .. ; done ; }
 

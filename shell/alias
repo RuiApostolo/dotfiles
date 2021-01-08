@@ -55,9 +55,9 @@ alias d='dirs -v | head -10'
 
 # suffix aliases
 alias -s {xyz,yml,yaml,py,run,txt,md,tcl,data,inp}=vim
-alias -s ods='libreoffice --nologo --calc &'
-alias -s odt='libreoffice --nologo --writer &'
-alias -s {mkv,avi,mp4,mp3}=vlc
+alias -s ods='background libreoffice --nologo --calc'
+alias -s odt='background libreoffice --nologo --writer'
+alias -s {mkv,avi,mp4,mp3}='background vlc'
 alias -s pdf=zathura
 
 # iron merge

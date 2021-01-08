@@ -107,9 +107,24 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source ~/.dotfiles/shell/alias
-source ~/.dotfiles/shell/exports
-source ~/.dotfiles/shell/functions
+if [ -f ~/.dotfiles/shell/alias ]; then
+    source ~/.dotfiles/shell/alias
+fi
+if [ -f ~/.dotfiles/shell/exports ]; then
+    source ~/.dotfiles/shell/exports
+fi
+if [ -f ~/.dotfiles/shell/functions ]; then
+    source ~/.dotfiles/shell/functions
+fi
+if [ -f ~/.dotfiles_local/shell/alias ]; then
+    source ~/.dotfiles_local/shell/alias
+fi
+if [ -f ~/.dotfiles_local/shell/exports ]; then
+    source ~/.dotfiles_local/shell/exports
+fi
+if [ -f ~/.dotfiles_local/shell/functions ]; then
+    source ~/.dotfiles_local/shell/functions
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
