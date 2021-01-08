@@ -13,7 +13,8 @@
         path: config/zathura
     ~/.config/fontconfig:
         path: config/fontconfig
-    ~/.gitconfig:
+    ~/.config/git/config:
+        path: config/git/config
     ~/.inputrc:
     ~/.latexmkrc:
     ~/.profile:
