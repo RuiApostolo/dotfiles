@@ -16,17 +16,17 @@
     ~/.gitconfig:
     ~/.inputrc:
     ~/.latexmkrc:
-    ~/.oh-my-zsh:
     ~/.profile:
     ~/.urxvt:
     ~/.vim:
         force: true
-    ~/.Xresources:
     ~/.zshrc:
 
 - shell:
     # should keep submodules on proper versions
     - [git submodule update --init --recursive, Installing submodules.]
+    # configs git to auto-update on pull
+    - [git config --global submodule.recurse true, Configuring git to auto-update submodules on pull]
     # install theme
     # won't work for WSL
     - [wget https://raw.githubusercontent.com/Mayccoll/Gogh/master/themes/monokai-soda.sh, Retrieving theme.]
