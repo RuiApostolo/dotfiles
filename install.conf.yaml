@@ -21,7 +21,6 @@
     ~/.urxvt:
     ~/.vim:
         force: true
-    ~/.Xresources:
     ~/.zshrc:
 
 - shell:
