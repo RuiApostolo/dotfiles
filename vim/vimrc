@@ -29,6 +29,15 @@ set splitright
 set mouse=a
 set scrolloff=10
 
+" for searching / pattern matching
+set ignorecase
+set smartcase
+
+" file undo:
+set undodir ~/.vimundofiles
+set undofile
+set undolevels=10000
+
 " set folding
 set foldmethod=indent
 set foldlevel=99
@@ -60,9 +69,6 @@ so $HOME/.vim/myfiletypes.vim
 " vim-plug enable
 filetype plugin on
 syntax on
-
-" Add home directory to runtimepath
-set rtp^=$HOME
 
 " Ubuntu only
 " Triger `autoread` when files changes on disk
@@ -125,6 +131,17 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 " SimpylFold options
 " let g:SimpylFold_docstring_preview=1
 
+" pymode options
+let g:pymode_rope_completion = 1
+let g:pymode_rope_completion_on_dot = 1
+let g:pymode_rope_completion_bind = '<C-Space>'
+let g:pymode_rope_autoimport_after_complete = 1
+
+let g:pymode_rope_goto_defenition_bind = '<C-f>g'
+let g:pymode_rope_rename_bind = '<C-f>rr'
+let g:pymode_rope_use_function_bind = '<C-f>ru'
+
+
 " vim-airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
@@ -134,3 +151,6 @@ let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
     source $LOCALFILE
 endif
+
+" enable man pages
+runtime! ftplugin/man.vim
