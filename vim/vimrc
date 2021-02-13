@@ -34,7 +34,7 @@ set ignorecase
 set smartcase
 
 " file undo:
-set undodir ~/.vimundofiles
+set undodir=~/.vimundofiles
 set undofile
 set undolevels=10000
 
