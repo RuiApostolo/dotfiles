@@ -16,3 +16,9 @@ export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.dotfiles/python/venvs
 export PROJECT_HOME=$HOME/code
 #source /home/rfapostolo/.local/bin/virtualenvwrapper.sh
+
+# experimental python exports
+if [ -d $HOME/code/molecules ]
+then
+    export $PYTHONPATH=$HOME/code/molecules:$PYTHONPATH
+fi
