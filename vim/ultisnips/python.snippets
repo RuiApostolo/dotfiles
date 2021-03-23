@@ -1,0 +1,19 @@
+snippet ifmain "ifmain" A
+if __name__ == '__main__':
+${0:main()}
+endsnippet
+
+snippet #! "hash_bang" A
+ #!/usr/bin/python3
+
+$0
+endsnippet
+
+snippet winp "with open input" A
+with open("input.dat", "r") as f:
+$0
+endsnippet
+
+snippet pdb "breakpoint" A
+import pdb; pdb.set_trace() $0
+endsnippet
