@@ -39,3 +39,17 @@ extract () {
   fi
 }
 export extract
+
+#Backup drive
+backupdata () {
+	echo "Would you like to delete files on the backup that are not on the original anymore?"
+	read answer
+	if [[ $answer = "Y" || $answer = "y" || $answer = "Yes" || $answer = "yes" ]]; then
+		rsync -glotrucvW --progress --inplace --delete --info=progress2 /data1/* /media/rfapostolo/RuiApostoloPHD4TB/PhD/ | tee ~/backuplog/"$(date +"%F_%T").del.log"
+	else
+		rsync -glotrucvW --progress --inplace --info=progress2 /data1/* /media/rfapostolo/RuiApostoloPHD4TB/PhD/ | tee ~/backuplog/"$(date +"%F_%T").nodel.log"
+	fi
+}
+
+export backupdata
+
