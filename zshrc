@@ -121,6 +121,10 @@ fi
 if [ -f ~/.dotfiles/shell/functions ]; then
     source ~/.dotfiles/shell/functions
 fi
+if [ -f ~/.dotfiles/profile ]; then
+    source ~/.dotfiles/profile
+fi
+
 if [ -f ~/.dotfiles_local/shell/alias ]; then
     source ~/.dotfiles_local/shell/alias
 fi

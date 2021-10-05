@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 # some more ls aliases
 alias ls='ls --color=auto'
-alias ll='ls -AhlFG'
-alias lk='ls -hlFG'
+alias ll='ls -hlFG -I "*~"'
+alias lk='ls -AhlFG'
 alias la='ls -aCF'
-alias  l='ls -ACF'
+alias  l='ls -CF -I "*~"'
 
 #typo correction
 alias sl='ls'
