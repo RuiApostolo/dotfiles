@@ -141,3 +141,6 @@ POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
 # disable omz autoupdate, make submodules auto-update automatically
 DISABLE_AUTO_UPDATE=true
+
+# zsh-autosuggestion forward character
+bindkey '^e' forward-word
