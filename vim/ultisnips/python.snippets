@@ -17,3 +17,25 @@ endsnippet
 snippet pdb "breakpoint" A
 import pdb; pdb.set_trace() $0
 endsnippet
+
+snippet trace "following breakpoints" A
+pdb.set_trace()$0
+endsnippet
+
+snippet ipy "drop to interactive shell" A
+import IPython; IPython.embed()$0
+endsnippet
+
+snippet def "function definition" Ab
+def ${1:function}(self$2):
+	$0
+	return
+
+endsnippet
+
+# snippet def "function in test.py" "'tests.py')" eAb
+# def test_${1:name}($2):
+	# $0
+
+# endsnippet
+

@@ -1,0 +1,21 @@
+snippet for "for... (for)" b
+for {${1:set i 0}} {${2:\$i < \$n}} {${3:incr i}} {
+	${4:${VISUAL}}
+}
+
+endsnippet
+
+snippet foreach "foreach... (foreach)" b
+foreach ${1:var} ${2:\$list} {
+	${3}
+}
+
+endsnippet
+
+snippet if "if... (if)" bA
+if {${1:condition}} {
+	${2}
+}
+
+endsnippet
+

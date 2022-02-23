@@ -6,6 +6,8 @@ export EDITOR="vim"
 export GUI_EDITOR="subl"
 export READER="zathura"
 export BROWSER="google-chrome"
+export pager="less --quit-if-one-screen"
+
 
 # variables
 export OMP_NUM_THREADS=$(grep -c processor /proc/cpuinfo)

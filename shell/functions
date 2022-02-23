@@ -3,6 +3,7 @@
 background () { "$@" > /dev/null 2&>1 & }
 # go back N directories
 cdn () { for i in $(seq "$1") ; do cd .. ; done ; }
+open () { xdg-open "$@" > /dev/null 2>&1 & }
 
 # make directory and enter it
 mkd () { mkdir -pv -- "$1" && cd -P -- "$1" ; }
@@ -53,3 +54,12 @@ backupdata () {
 
 export backupdata
 
+compress () {
+tar cvf - $1 | pv -s $(du -sb $1 | awk '{print $1}') | pigz --best > $1.tar.gz
+}
+export compress
+
+prm () {
+rm -rv $1 | pv -l -s $( du -a $1 | wc -l ) > /dev/null
+}
+export prm

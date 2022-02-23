@@ -46,3 +46,33 @@
 [submodule "zsh/custom/plugins/zsh-completions"]
 	path = zsh/custom/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
+[submodule "vim/pack/plugins/start/supertab"]
+	path = vim/pack/plugins/start/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "vim/pack/plugins/start/pytest.vim"]
+	path = vim/pack/plugins/start/pytest.vim
+	url = git@github.com:alfredodeza/pytest.vim.git
+[submodule "vim/pack/plugins/start/vim-markdown-folding"]
+	path = vim/pack/plugins/start/vim-markdown-folding
+	url = git@github.com:masukomi/vim-markdown-folding.git
+[submodule "vim/pack/plugins/start/tabular"]
+	path = vim/pack/plugins/start/tabular
+	url = git@github.com:godlygeek/tabular.git
+[submodule "vim/pack/plugins/start/vim-surround"]
+	path = vim/pack/plugins/start/vim-surround
+	url = git@github.com:tpope/vim-surround.git
+[submodule "vim/pack/plugins/start/vim-repeat"]
+	path = vim/pack/plugins/start/vim-repeat
+	url = git@github.com:tpope/vim-repeat.git
+[submodule "vim/pack/plugins/start/indentLine"]
+	path = vim/pack/plugins/start/indentLine
+	url = git@github.com:Yggdroot/indentLine.git
+[submodule "vim/pack/plugins/start/undotree"]
+	path = vim/pack/plugins/start/undotree
+	url = git@github.com:mbbill/undotree.git
+[submodule "vim/pack/plugins/start/vim-zsh-path-completion"]
+	path = vim/pack/plugins/start/vim-zsh-path-completion
+	url = git@github.com:fweep/vim-zsh-path-completion.git
+[submodule "vim/pack/plugins/start/vim-abolish"]
+	path = vim/pack/plugins/start/vim-abolish
+	url = git@github.com:tpope/vim-abolish.git

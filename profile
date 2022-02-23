@@ -34,3 +34,5 @@ if [ -d "$HOME/.dotfiles/bin" ] ; then
 fi
 
 export CUPS_USER=rapostol
+setxkbmap -option caps:escape
+. "$HOME/.cargo/env"

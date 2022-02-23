@@ -1,10 +1,12 @@
 #!/usr/bin/env sh
+# replace ls with exa
+# install exa with apt (20.10 and higher) or with 'cargo install exa'
+alias ls='exa'
 # some more ls aliases
-alias ls='ls --color=auto'
-alias ll='ls -hlFG -I "*~"'
-alias lk='ls -AhlFG'
-alias la='ls -aCF'
-alias  l='ls -CF -I "*~"'
+alias ll='ls -lF -I "*~"'
+alias lk='ls -lF'
+alias la='ls -aF'
+alias  l='ls -F -I "*~"'
 
 #typo correction
 alias sl='ls'
@@ -23,15 +25,17 @@ alias vimrc='vi ~/.dotfiles/vimrc'
 alias bashrc='vi ~/.dotfiles/bashrc'
 alias inputrc='vi ~/.dotfiles/inputrc'
 alias profile='vi ~/.dotfiles/profile'
-alias functions='vi ~/.dotfiles/shell/untions'
+alias functions='vi ~/.dotfiles/shell/funtions'
 
 #navigation
 alias q='exit'
+# alias open='xdg-open &'
 
 #utilities
 alias whatismyip="ip route get 8.8.8.8 | awk '{print \$NF; exit}'"
 alias sshconfig='vi ~/.ssh/config'
 alias pdfme='find . -name "*.ps" -o -name "*.eps" -exec epstopdf {} ";"'
+alias thesis='zathura ~/Documents/Final_Revised_delivered.pdf &'
 
 #openfortvpn not quite working
 # alias vpn="screen -d -m -S vpn sudo openfortivpn -c ~/.dotfiles_local/config/fortivpn/config"

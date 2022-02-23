@@ -11,11 +11,15 @@ set wrap
 set linebreak
 set tabstop=2
 set shiftwidth=2
-set softtabstop=4
+set softtabstop=2
 set expandtab
 set showcmd
 set cursorline
+set cursorcolumn
+set wildignorecase
 set wildmenu
+set wildmode=longest:full,full
+set wildignore+=*~,*.bmp,*.gif,*.jpg,*.png,*.pdf,*.tga,*.cml,*.ods
 set showmatch
 set incsearch
 set hlsearch
@@ -28,13 +32,17 @@ set splitbelow
 set splitright
 set mouse=a
 set scrolloff=10
+set completeopt=menuone,preview,noinsert,noselect
 
 " for searching / pattern matching
 set ignorecase
 set smartcase
 
+" traces.vim and abolish.vim integration
+let g:traces_abolish_integration = 1
+
 " file undo:
-set undodir=~/.vimundofiles
+set undodir=~/.vim/undofiles
 set undofile
 set undolevels=10000
 
@@ -49,10 +57,10 @@ nnoremap <space> za
 colorscheme molokai
 
 " remap for moving around in splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-Up> <C-W><C-K>
+nnoremap <C-Down> <C-W><C-J>
+nnoremap <C-Left> <C-W><C-H>
+nnoremap <C-Right> <C-W><C-L>
 
 " fortran definitions
 let fortran_free_source=1
@@ -125,8 +133,12 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDCustomDelimiters = { 'lammps': { 'left': '#' } }
 " hotkeys
 nmap <C-_>   <Plug>NERDCommenterToggle
-vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
+vmap <C-_>   <Plug>NERDCommenterTogglegv
 " imap <C-_>   <esc><Plug>NERDCommenterToggle<CR>i
+
+" UndoTree
+nnoremap <F5> :UndotreeToggle<cr>
+
 
 " SimpylFold options
 " let g:SimpylFold_docstring_preview=1
@@ -142,10 +154,55 @@ let g:pymode_rope_rename_bind = '<C-f>rr'
 let g:pymode_rope_use_function_bind = '<C-f>ru'
 
 
+" supertab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+
 " vim-airline options
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
+
+" indentLine options:
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+" kinda related, changes tabs to - and spaces to ·
+set list
+set lcs=tab:>-,space:·
+" set lcs+=eol:
+
+" vertical alignement
+inoremap <silent> <Bar>   <Bar><Esc>:call <SID>align()<CR>a
+
+function! s:align()
+  let p = '^\s*|\s.*\s|\s*$'
+  if exists(':Tabularize') && getline('.') =~# '^\s*|' && (getline(line('.')-1) =~# p || getline(line('.')+1) =~# p)
+    let column = strlen(substitute(getline('.')[0:col('.')],'[^|]','','g'))
+    let position = strlen(matchstr(getline('.')[0:col('.')],'.*|\s*\zs.*'))
+    Tabularize/|/l1
+    normal! 0
+    call search(repeat('[^|]*|',column).'\s\{-\}'.repeat('.',position),'ce',line('.'))
+  endif
+endfunction
+
+nnoremap <CR> o<Esc>k
+
+" markdown fold
+autocmd FileType markdown set foldexpr=NestedMarkdownFolds()
+
+
+" python run testing
+" imap <F6> <Esc>:w<CR>:!clear;python3 %<CR>
+" nmap <F6> <Esc>:w<CR>:!clear;"%:p"<CR>
+nmap <F6> <Esc>:w<CR>:!clear;python3 %<CR>
+
+" pytest
+nmap <silent><Leader>n <Esc>:Pytest next<CR>
+nmap <silent><Leader>e <Esc>:Pytest error<CR>
+nmap <silent><Leader>t <Esc>:Pytest project<CR>
+nmap <silent><Leader>f <Esc>:Pytest file<CR>
+nmap <silent><Leader>c <Esc>:Pytest class<CR>
+nmap <silent><Leader>m <Esc>:Pytest method<CR>
+
 
 let $LOCALFILE=expand("~/.vimrc_local")
 if filereadable($LOCALFILE)
