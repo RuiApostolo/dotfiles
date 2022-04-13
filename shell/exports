@@ -24,3 +24,5 @@ if [ -d $HOME/code/molecules ]
 then
     export $PYTHONPATH=$HOME/code/molecules:$PYTHONPATH
 fi
+# ruby
+export PATH="/home/rfapostolo/.gem/ruby/2.7.0/bin:$PATH"

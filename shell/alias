@@ -53,7 +53,7 @@ alias d='dirs -v | head -10'
 # alias 8='cd -8'
 # alias 9='cd -9'
 
-
+alias open='xdg-open'
 
 
 
@@ -62,8 +62,10 @@ alias -s {xyz,yml,yaml,py,run,txt,md,tcl,data,inp}=vim
 alias -s ods='background libreoffice --nologo --calc'
 alias -s odt='background libreoffice --nologo --writer'
 alias -s {mkv,avi,mp4,mp3}='background vlc'
-alias -s pdf=zathura
+alias -s {pdf,eps,ps}=zathura
 
 # iron merge
 
 # alias ironmerge='echo "lmp_merge -n 3 surface_up min/max z surface_down min/max z your_data min/maxz -o data.combined.out"'
+# sshfs pibsa
+alias pibsa='sshfs rfapostolo@SSVNormandy:/data1/14.pibsa-pam/ ~/14.pibsa-pam && cd ~/14.pibsa-pam'

@@ -140,6 +140,9 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
 
+# zsh-autosuggestion forward charact
+bindkey '^f' forward-word
+
 # disable omz autoupdate, make submodules auto-update automatically
 DISABLE_AUTO_UPDATE=true
 

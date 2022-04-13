@@ -24,6 +24,8 @@
     ~/.zshrc:
 
 - shell:
+    # packages to install
+    - [sudo apt install exa ranger wget curl htop screen tmux git vim vim-gnome zsh gnuplot python3 python3-dev python3-pip openssh-server openssh-client texlive-full make gcc grace ]
     # should keep submodules on proper versions
     - [git submodule update --init --recursive, Installing submodules.]
     # configs git to auto-update on pull
