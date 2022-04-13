@@ -148,3 +148,7 @@ DISABLE_AUTO_UPDATE=true
 
 # zsh-autosuggestion forward charact
 bindkey '^f' forward-word
+
+if [ -f ~/.local/bin/virtualenvwrapper.sh ]; then
+    source ~/.local/bin/virtualenvwrapper.sh
+fi
