@@ -35,4 +35,6 @@ fi
 
 export CUPS_USER=rapostol
 setxkbmap -option caps:escape
-. "$HOME/.cargo/env"
+if [ -d "$HOME/.cargo/env" ] ; then
+  . "$HOME/.cargo/env"
+fi

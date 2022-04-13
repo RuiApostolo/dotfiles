@@ -53,7 +53,7 @@ alias d='dirs -v | head -10'
 # alias 8='cd -8'
 # alias 9='cd -9'
 
-alias open='xdg-open'
+# alias open='xdg-open'
 
 
 
