@@ -19,9 +19,6 @@
 [submodule "vim/pack/plugins/start/traces.vim"]
 	path = vim/pack/plugins/start/traces.vim
 	url = https://github.com/markonm/traces.vim.git
-[submodule "vim/pack/plugins/start/python-mode"]
-	path = vim/pack/plugins/start/python-mode
-	url = https://github.com/python-mode/python-mode.git
 [submodule "vim/pack/plugins/start/vim-easy-align"]
 	path = vim/pack/plugins/start/vim-easy-align
 	url = https://github.com/junegunn/vim-easy-align.git
