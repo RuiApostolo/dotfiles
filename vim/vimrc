@@ -227,11 +227,11 @@ let g:pymode_rope_use_function_bind = '<C-f>ru'
 " imap <F6> <Esc>:w<CR>:!clear;python3 %<CR>
 nmap <F6> <Esc>:w<CR>:!clear;"%:p"<CR>
 
-if has("autocmd")
-  augroup templates
-    autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
-  augroup END
-endif
+" if has("autocmd")
+"   augroup templates
+"     autocmd BufNewFile *.py 0r ~/.vim/templates/skeleton.py
+"   augroup END
+" endif
 
 
 " vertical alignement

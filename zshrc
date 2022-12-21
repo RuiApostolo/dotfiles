@@ -146,9 +146,6 @@ bindkey '^f' forward-word
 # disable omz autoupdate, make submodules auto-update automatically
 DISABLE_AUTO_UPDATE=true
 
-# zsh-autosuggestion forward charact
-bindkey '^f' forward-word
-
 if [ -f ~/.local/bin/virtualenvwrapper.sh ]; then
     source ~/.local/bin/virtualenvwrapper.sh
 fi
